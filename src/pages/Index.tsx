@@ -9,6 +9,9 @@ import TechStackSection from '@/components/TechStackSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
+// Redux could be integrated here if we were building the full application
+// For now, we're just showcasing it in the tech stack section
+
 const Index = () => {
   return (
     <div className="min-h-screen">
