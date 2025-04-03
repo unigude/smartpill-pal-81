@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { cn } from "@/lib/utils";
 import { X, Menu, Bell } from "lucide-react";
@@ -22,7 +23,6 @@ const Navbar = () => {
               <a href="#how-it-works" className="text-gray-600 hover:text-medical-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">How it Works</a>
               <a href="#features" className="text-gray-600 hover:text-medical-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Features</a>
               <a href="#testimonials" className="text-gray-600 hover:text-medical-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Testimonials</a>
-              <a href="#tech" className="text-gray-600 hover:text-medical-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Tech Stack</a>
               <a href="#contact" className="text-gray-600 hover:text-medical-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
             </div>
           </div>
@@ -53,7 +53,6 @@ const Navbar = () => {
           <a href="#how-it-works" className="text-gray-600 hover:text-medical-600 block px-3 py-2 rounded-md text-base font-medium">How it Works</a>
           <a href="#features" className="text-gray-600 hover:text-medical-600 block px-3 py-2 rounded-md text-base font-medium">Features</a>
           <a href="#testimonials" className="text-gray-600 hover:text-medical-600 block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
-          <a href="#tech" className="text-gray-600 hover:text-medical-600 block px-3 py-2 rounded-md text-base font-medium">Tech Stack</a>
           <a href="#contact" className="text-gray-600 hover:text-medical-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
           <div className="pt-2">
             <Button className="pill-button w-full">

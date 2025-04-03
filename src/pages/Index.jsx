@@ -5,7 +5,6 @@ import HeroSection from '@/components/HeroSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
-import TechStackSection from '@/components/TechStackSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
@@ -26,7 +25,6 @@ const Index = () => {
       <HowItWorksSection />
       <FeaturesSection />
       <TestimonialsSection />
-      <TechStackSection />
       <ContactSection />
       <Footer />
     </div>
