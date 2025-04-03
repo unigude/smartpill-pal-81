@@ -1,14 +1,8 @@
+
 import * as React from "react"
 
-const TOAST_LIMIT = 1
+const TOAST_LIMIT = 5
 const TOAST_REMOVE_DELAY = 1000000
-
-const actionTypes = {
-  ADD_TOAST: "ADD_TOAST",
-  UPDATE_TOAST: "UPDATE_TOAST",
-  DISMISS_TOAST: "DISMISS_TOAST",
-  REMOVE_TOAST: "REMOVE_TOAST",
-}
 
 let count = 0
 
@@ -35,7 +29,16 @@ const addToRemoveQueue = (toastId) => {
   toastTimeouts.set(toastId, timeout)
 }
 
-export const reducer = (state, action) => {
+const actionTypes = {
+  ADD_TOAST: "ADD_TOAST",
+  UPDATE_TOAST: "UPDATE_TOAST",
+  DISMISS_TOAST: "DISMISS_TOAST",
+  REMOVE_TOAST: "REMOVE_TOAST",
+}
+
+let memoryState = { toasts: [] }
+
+function reducer(state, action) {
   switch (action.type) {
     case "ADD_TOAST":
       return {
@@ -92,8 +95,6 @@ export const reducer = (state, action) => {
 
 const listeners = []
 
-let memoryState = { toasts: [] }
-
 function dispatch(action) {
   memoryState = reducer(memoryState, action)
   listeners.forEach((listener) => {
@@ -101,7 +102,9 @@ function dispatch(action) {
   })
 }
 
-function toast(props) {
+function toast({
+  ...props
+}) {
   const id = genId()
 
   const update = (props) =>
