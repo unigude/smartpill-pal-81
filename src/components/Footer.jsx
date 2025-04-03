@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -9,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto py-12 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">SmartPillPal</h3>
+            <h3 className="text-xl font-bold text-white mb-4">DoseBuddy</h3>
             <p className="mb-4">Revolutionizing medication management with smart technology.</p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-medical-300 transition-colors">
@@ -68,7 +67,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {new Date().getFullYear()} SmartPillPal. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} DoseBuddy. All rights reserved.</p>
           <div className="mt-4 md:mt-0">
             <a href="#" className="hover:text-medical-300 transition-colors mr-4">Privacy</a>
             <a href="#" className="hover:text-medical-300 transition-colors mr-4">Terms</a>
@@ -80,7 +79,6 @@ const Footer = () => {
   );
 };
 
-// Fix missing Input component
 const Input = ({ className, ...props }) => {
   return (
     <input

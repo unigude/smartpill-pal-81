@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { cn } from "@/lib/utils";
 import { X, Menu, Bell } from "lucide-react";
@@ -13,7 +12,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <span className="text-medical-600 font-bold text-xl">SmartPill<span className="text-medical-500">Pal</span></span>
+            <span className="text-medical-600 font-bold text-xl">Dose<span className="text-medical-500">Buddy</span></span>
           </div>
           
           {/* Desktop Navigation */}

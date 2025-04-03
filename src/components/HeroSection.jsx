@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Bell, Clock, UserCheck } from "lucide-react";
@@ -11,13 +10,13 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col space-y-6 animate-fade-in">
             <h1 className="h1 text-gray-900">
-              Never Miss a Dose <span className="text-medical-500">Again</span>
+              Never Miss a Dose <span className="text-medical-500">Buddy</span>
             </h1>
             <h2 className="text-2xl font-medium text-gray-600">
               Smart, Secure, Automated.
             </h2>
             <p className="text-gray-600 text-lg max-w-md">
-              The SmartPillPal revolutionizes medication management with intelligent dispensing, 
+              The DoseBuddy revolutionizes medication management with intelligent dispensing, 
               real-time notifications, and caregiver monitoring to ensure perfect medication adherence.
             </p>
             
