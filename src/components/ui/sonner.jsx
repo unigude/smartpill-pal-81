@@ -1,11 +1,11 @@
 
-import { Toaster } from "sonner"
+import { Toaster as SonnerToaster } from "sonner"
 
 const Toaster = ({ ...props }) => {
   const theme = "system"
 
   return (
-    <Sonner
+    <SonnerToaster
       theme={theme}
       className="toaster group"
       toastOptions={{
