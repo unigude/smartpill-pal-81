@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Bell, Clock, UserCheck } from "lucide-react";
@@ -10,7 +11,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col space-y-6 animate-fade-in">
             <h1 className="h1 text-gray-900">
-              Never Miss a Dose <span className="text-medical-500">Buddy</span>
+              Never Miss a Dose
             </h1>
             <h2 className="text-2xl font-medium text-gray-600">
               Smart, Secure, Automated.
@@ -58,33 +59,37 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <div className="relative flex justify-center items-center lg:justify-end h-full">
+          <div className="hidden lg:flex items-center justify-end">
             <div className="w-full max-w-md">
               <AspectRatio ratio={1/1} className="rounded-2xl bg-gradient-to-br from-medical-100 to-blue-50 shadow-lg">
                 <div className="w-full h-full relative p-8">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-3/4 h-3/4 bg-white rounded-lg shadow-xl transform rotate-3 border-2 border-medical-200"></div>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-3/4 h-3/4 bg-white rounded-lg shadow-xl transform -rotate-3 border-2 border-medical-300">
-                      <div className="w-full h-full flex flex-col items-center justify-center p-4">
-                        <div className="w-full rounded-md bg-medical-100 h-8 mb-3"></div>
-                        <div className="grid grid-cols-2 gap-2 w-full">
-                          <div className="h-8 rounded-md bg-medical-200"></div>
-                          <div className="h-8 rounded-md bg-medical-200"></div>
-                          <div className="h-8 rounded-md bg-medical-200"></div>
-                          <div className="h-8 rounded-md bg-medical-200"></div>
-                        </div>
-                        <div className="mt-auto w-full h-10 rounded-md bg-medical-500"></div>
-                      </div>
-                    </div>
+                  <img 
+                    src="/lovable-uploads/7e7d3121-4f3e-409b-8740-45150304d046.png"
+                    alt="DoseBuddy App Interface"
+                    className="w-full h-full object-contain"
+                  />
+                  <div className="absolute bottom-4 right-4 bg-white rounded-full shadow-lg h-16 w-16 flex items-center justify-center animate-pulse-light">
+                    <Bell className="h-8 w-8 text-medical-500" />
                   </div>
                 </div>
               </AspectRatio>
-              <div className="absolute bottom-4 right-4 bg-white rounded-full shadow-lg h-16 w-16 flex items-center justify-center animate-pulse-light">
-                <Bell className="h-8 w-8 text-medical-500" />
-              </div>
             </div>
+          </div>
+          
+          {/* Mobile-only image - displayed below benefits on small screens */}
+          <div className="lg:hidden w-full max-w-xs mx-auto mt-8">
+            <AspectRatio ratio={1/1} className="rounded-2xl bg-gradient-to-br from-medical-100 to-blue-50 shadow-lg">
+              <div className="w-full h-full relative p-6">
+                <img 
+                  src="/lovable-uploads/7e7d3121-4f3e-409b-8740-45150304d046.png"
+                  alt="DoseBuddy App Interface"
+                  className="w-full h-full object-contain"
+                />
+                <div className="absolute bottom-2 right-2 bg-white rounded-full shadow-lg h-12 w-12 flex items-center justify-center animate-pulse-light">
+                  <Bell className="h-6 w-6 text-medical-500" />
+                </div>
+              </div>
+            </AspectRatio>
           </div>
         </div>
         
