@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Bell, Clock, UserCheck } from "lucide-react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const HeroSection = () => {
   return (
@@ -58,16 +59,15 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <div className="relative flex justify-center items-center animate-slide-up lg:justify-end">
-            <div className="relative w-full max-w-md">
-              {/* Placeholder for 3D mockup image */}
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-medical-100 to-blue-50 shadow-lg flex items-center justify-center p-8">
-                <div className="w-full h-full relative">
+          <div className="relative flex justify-center items-center lg:justify-end h-full">
+            <div className="w-full max-w-md">
+              <AspectRatio ratio={1/1} className="rounded-2xl bg-gradient-to-br from-medical-100 to-blue-50 shadow-lg">
+                <div className="w-full h-full relative p-8">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-48 h-64 bg-white rounded-lg shadow-xl transform rotate-3 border-2 border-medical-200"></div>
+                    <div className="w-3/4 h-3/4 bg-white rounded-lg shadow-xl transform rotate-3 border-2 border-medical-200"></div>
                   </div>
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-48 h-64 bg-white rounded-lg shadow-xl transform -rotate-3 border-2 border-medical-300">
+                    <div className="w-3/4 h-3/4 bg-white rounded-lg shadow-xl transform -rotate-3 border-2 border-medical-300">
                       <div className="w-full h-full flex flex-col items-center justify-center p-4">
                         <div className="w-full rounded-md bg-medical-100 h-8 mb-3"></div>
                         <div className="grid grid-cols-2 gap-2 w-full">
@@ -81,7 +81,7 @@ const HeroSection = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </AspectRatio>
               <div className="absolute bottom-4 right-4 bg-white rounded-full shadow-lg h-16 w-16 flex items-center justify-center animate-pulse-light">
                 <Bell className="h-8 w-8 text-medical-500" />
               </div>
