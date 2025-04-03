@@ -7,9 +7,8 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative overflow-hidden pt-20 section-padding bg-gradient-to-br from-blue-50 to-white">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
-          {/* Text Content - Now uses flex-1 to take available space */}
-          <div className="flex flex-col space-y-6 animate-fade-in flex-1">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="flex flex-col space-y-6 animate-fade-in">
             <h1 className="h1 text-gray-900">
               Never Miss a Dose
             </h1>
@@ -59,8 +58,7 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Image Container - Now uses flex-1 to take available space and maintain aspect ratio */}
-          <div className="relative flex justify-center items-center lg:justify-end h-full flex-1">
+          <div className="relative flex justify-center items-center lg:justify-end h-full">
             <div className="w-full max-w-md">
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-medical-100 to-blue-50 shadow-lg flex items-center justify-center p-8">
                 <div className="w-full h-full relative">
